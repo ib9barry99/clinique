@@ -22,7 +22,7 @@ export default function AboutDoctor() {
               <Link href="/" className="text-gray-600 hover:text-blue-600">Accueil</Link>
               <a href="#" className="text-gray-600 hover:text-blue-600">Services</a>
               <a href="#" className="text-gray-600 hover:text-blue-600 font-medium">Équipe</a>
-              <a href="#" className="text-gray-600 hover:text-blue-600">Contact</a>
+              <Link href="/education" className="text-gray-600 hover:text-blue-600">Éducation</Link>
             </div>
             <button className="bg-blue-600 text-white px-4 py-2 rounded-full hover:bg-blue-700">
               Prendre RDV
@@ -42,6 +42,8 @@ export default function AboutDoctor() {
                   src="/doctor.jpg"
                   alt="Dr BARRY Souleymane Djigué"
                   fill
+                  sizes="(max-width: 768px) 100vw, 33vw"
+                  priority
                   className="object-cover"
                 />
               </div>
@@ -84,15 +86,15 @@ export default function AboutDoctor() {
               </div>
               
               <h1 className="text-4xl font-bold text-gray-900 mb-6">Dr. Barry Souleymane Djigué</h1>
-              <p className="text-gray-500 text-xl mb-8">Neurologue – CHU Ignace Deen, membre du conseil d'administration de la Société Guinéenne de Neurologie</p>
+              <p className="text-gray-500 text-xl mb-8">Neurologue – CHU Ignace Deen, membre du conseil d&apos;administration de la Société Guinéenne de Neurologie</p>
               
               <div className="prose prose-lg max-w-none">
                 <p className="mb-6">
-                  Le Dr Barry Souleymane Djigué est un neurologue spécialisé dans le traitement des troubles neurologiques, avec une expertise particulière dans le diagnostic et le traitement de l'épilepsie et des états de mal convulsifs.
+                  Le Dr Barry Souleymane Djigué est un neurologue spécialisé dans le traitement des troubles neurologiques, avec une expertise particulière dans le diagnostic et le traitement de l&apos;épilepsie et des états de mal convulsifs.
                 </p>
                 
                 <p className="mb-6">
-                  Exerçant au CHU Ignace Deen de Conakry, il est reconnu pour son engagement envers les patients et sa détermination à combattre la stigmatisation associée aux maladies neurologiques en Guinée, notamment l'épilepsie.
+                  Exerçant au CHU Ignace Deen de Conakry, il est reconnu pour son engagement envers les patients et sa détermination à combattre la stigmatisation associée aux maladies neurologiques en Guinée, notamment l&apos;épilepsie.
                 </p>
                 
                 <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4">Domaines d'expertise</h2>
@@ -117,11 +119,11 @@ export default function AboutDoctor() {
                 <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4">Citations</h2>
                 
                 <blockquote className="border-l-4 border-blue-600 pl-4 italic text-gray-700 mb-8">
-                  "L'épilepsie n'est pas une malédiction, c'est une maladie qui se traite. Notre mission est de combattre cette stigmatisation et d'offrir des soins de qualité à tous les patients."
+                  &quot;L&apos;épilepsie n&apos;est pas une malédiction, c&apos;est une maladie qui se traite. Notre mission est de combattre cette stigmatisation et d&apos;offrir des soins de qualité à tous les patients.&quot;
                 </blockquote>
                 
                 <blockquote className="border-l-4 border-blue-600 pl-4 italic text-gray-700 mb-8">
-                  "En Guinée, trop de patients souffrant d'épilepsie sont marginalisés et n'ont pas accès aux soins appropriés. Notre travail consiste à changer cette réalité, un patient à la fois."
+                  &quot;En Guinée, trop de patients souffrant d&apos;épilepsie sont marginalisés et n&apos;ont pas accès aux soins appropriés. Notre travail consiste à changer cette réalité, un patient à la fois.&quot;
                 </blockquote>
                 
                 <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4">Publications et recherches</h2>
@@ -129,22 +131,22 @@ export default function AboutDoctor() {
                 <ul className="list-disc pl-5 space-y-4 mb-8">
                   <li>
                     <strong>Étude sur les états de mal convulsifs (EMC) en Guinée</strong>
-                    <p className="text-gray-600">Publication dans l'African Journal of Neurological Sciences (AJNS)</p>
+                    <p className="text-gray-600">Publication dans l&apos;African Journal of Neurological Sciences (AJNS)</p>
                   </li>
                   <li>
-                    <strong>Épidémiologie de l'épilepsie en Guinée : défis et perspectives</strong>
+                    <strong>Épidémiologie de l&apos;épilepsie en Guinée : défis et perspectives</strong>
                     <p className="text-gray-600">Recherche menée en collaboration avec la Société Guinéenne de Neurologie</p>
                   </li>
                   <li>
-                    <strong>Impact de la sensibilisation sur la prise en charge de l'épilepsie</strong>
-                    <p className="text-gray-600">Étude sur l'efficacité des programmes d'éducation dans la réduction de la stigmatisation</p>
+                    <strong>Impact de la sensibilisation sur la prise en charge de l&apos;épilepsie</strong>
+                    <p className="text-gray-600">Étude sur l&apos;efficacité des programmes d&apos;éducation dans la réduction de la stigmatisation</p>
                   </li>
                 </ul>
                 
                 <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4">Engagement et associations</h2>
                 
                 <ul className="list-disc pl-5 space-y-2 mb-8">
-                  <li>Membre du conseil d'administration de la Société Guinéenne d'Étude et de Traitement de la Douleur (SOGETD)</li>
+                  <li>Membre du conseil d&apos;administration de la Société Guinéenne d&apos;Étude et de Traitement de la Douleur (SOGETD)</li>
                   <li>Membre actif de la Société Guinéenne de Neurologie</li>
                   <li>Participant régulier aux congrès nationaux et internationaux de neurologie</li>
                 </ul>

@@ -23,7 +23,7 @@ export default function Home() {
               <a href="#" className="text-gray-600 hover:text-blue-600">Accueil</a>
               <a href="#" className="text-gray-600 hover:text-blue-600">Services</a>
               <a href="#" className="text-gray-600 hover:text-blue-600">Équipe</a>
-              <a href="#" className="text-gray-600 hover:text-blue-600">Contact</a>
+              <Link href="/education" className="text-gray-600 hover:text-blue-600">Éducation</Link>
             </div>
             <button className="bg-blue-600 text-white px-4 py-2 rounded-full hover:bg-blue-700">
               Prendre RDV
@@ -49,7 +49,7 @@ export default function Home() {
                   <button className="bg-white text-blue-600 px-8 py-3 rounded-full hover:bg-blue-50 font-medium">
                     Prendre rendez-vous
                   </button>
-                  <button className="border-2 border-white text-white px-8 py-3 rounded-full hover:bg-white/10 font-medium">
+                  <button className="border-2 border-white text-white px-8 py-3 rounded-full hover:bg-blue-700 font-medium">
                     Nos services
                   </button>
                 </div>
@@ -63,10 +63,12 @@ export default function Home() {
           <div className="flex flex-col md:flex-row items-center gap-12">
             <div className="w-full md:w-1/3">
               <div className="relative w-full h-[400px] rounded-xl overflow-hidden shadow-xl">
-            <Image
+                <Image
                   src="/doctor.jpg"
                   alt="Dr BARRY Souleymane Djigué"
                   fill
+                  sizes="(max-width: 768px) 100vw, 33vw"
+                  priority
                   className="object-cover"
                 />
               </div>
@@ -74,7 +76,7 @@ export default function Home() {
             <div className="w-full md:w-2/3">
               <h2 className="text-3xl font-bold text-gray-900 mb-6">Dr Souleymane Djigué Barry</h2>
               <p className="text-xl text-gray-700 mb-6">
-                Neurologue à l'hôpital Ignace Deen, spécialiste des états de mal convulsifs, engagé contre la stigmatisation des maladies neurologiques en Guinée.
+                Neurologue à l&apos;hôpital Ignace Deen, spécialiste des états de mal convulsifs, engagé contre la stigmatisation des maladies neurologiques en Guinée.
               </p>
               <div className="space-y-4 mb-8">
                 <div className="flex items-start">
@@ -94,7 +96,7 @@ export default function Home() {
                     </svg>
                   </div>
                   <p className="ml-3 text-gray-600">
-                    Membre du conseil d'administration de la Société Guinéenne de Neurologie
+                    Membre du conseil d&apos;administration de la Société Guinéenne de Neurologie
                   </p>
                 </div>
                 <div className="flex items-start">
@@ -104,7 +106,7 @@ export default function Home() {
                     </svg>
                   </div>
                   <p className="ml-3 text-gray-600">
-                    Chercheur actif dans le domaine de l'épilepsie et des troubles convulsifs
+                    Chercheur actif dans le domaine de l&apos;épilepsie et des troubles convulsifs
                   </p>
                 </div>
               </div>
@@ -138,7 +140,7 @@ export default function Home() {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 8h10M7 12h4m1 8l-4-4H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-3l-4 4z" />
                   </svg>
                 </div>
-                <h3 className="text-xl font-semibold mb-2">Traitement de l'épilepsie</h3>
+                <h3 className="text-xl font-semibold mb-2">Traitement de l&apos;épilepsie</h3>
                 <p className="text-gray-600">Prise en charge personnalisée des crises convulsives et suivi adapté</p>
               </div>
               <div className="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow">
@@ -162,7 +164,7 @@ export default function Home() {
             </svg>
             <div className="relative z-10">
               <p className="text-gray-800 text-xl italic mb-4">
-                "L'épilepsie n'est pas une malédiction, c'est une maladie qui se traite. Notre mission est de combattre cette stigmatisation et d'offrir des soins de qualité à tous les patients."
+                &quot;L&apos;épilepsie n&apos;est pas une malédiction, c&apos;est une maladie qui se traite. Notre mission est de combattre cette stigmatisation et d&apos;offrir des soins de qualité à tous les patients.&quot;
               </p>
               <footer className="text-gray-600">
                 <strong>Dr. Souleymane Djigué Barry</strong> - Neurologue
@@ -174,16 +176,16 @@ export default function Home() {
         {/* Appel à l'action */}
         <div className="bg-blue-600 py-16">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h2 className="text-3xl font-bold text-white mb-8">Prenez rendez-vous aujourd'hui</h2>
+            <h2 className="text-3xl font-bold text-white mb-8">Prenez rendez-vous aujourd&apos;hui</h2>
             <p className="text-xl text-blue-100 mb-8 max-w-3xl mx-auto">
-              Notre équipe médicale est à votre disposition pour vous offrir les meilleurs soins neurologiques possibles. N'hésitez pas à nous contacter.
+              Notre équipe médicale est à votre disposition pour vous offrir les meilleurs soins neurologiques possibles. N&apos;hésitez pas à nous contacter.
             </p>
             <div className="flex flex-col sm:flex-row justify-center gap-4">
               <button className="bg-white text-blue-600 px-8 py-3 rounded-full hover:bg-blue-50 font-medium">
                 Prendre rendez-vous
               </button>
               <button className="border-2 border-white text-white px-8 py-3 rounded-full hover:bg-blue-700 font-medium">
-                Nous contacter
+                Appeler la clinique
               </button>
             </div>
           </div>
@@ -202,7 +204,7 @@ export default function Home() {
               <h4 className="text-lg font-semibold mb-4">Services</h4>
               <ul className="space-y-2 text-gray-400">
                 <li>Consultations neurologiques</li>
-                <li>Traitement de l'épilepsie</li>
+                <li>Traitement de l&apos;épilepsie</li>
                 <li>Suivi médical spécialisé</li>
                 <li>Urgences neurologiques</li>
               </ul>
